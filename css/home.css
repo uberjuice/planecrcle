@@ -1,0 +1,175 @@
+.features {
+    background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(http://orig12.deviantart.net/ef42/f/2015/341/d/6/flat_landscape__winter_edition__by_jovicasmileski-d9jbz70.jpg) no-repeat center center; background-size:cover; background-color:darkgray;
+    display: flex;
+    height: auto;
+    max-height: 50em;
+    width: 100%;
+    z-index: -3;
+    overflow: inherit;
+    padding-bottom: 3em;
+}
+
+.description {
+    width: 80%;
+    max-width: 43em;
+    margin: auto;
+    margin-top: 7em;
+    color: white;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.description h4 {text-align: right; color: #f7dab0; margin-top: 2em;}
+
+.button-wrap {text-align: center; margin-top: 3em;}
+
+.contests {
+    margin: auto 2em;
+    min-height: 100%;
+    margin-bottom: 2em;
+}
+
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+    max-width: 126em;
+}
+
+.contests-description {
+    width: 100%;
+    line-height: 2.05em;
+    margin: 1em 0;
+}
+
+.contests-description h2 {
+    color: black; 
+    font-size: 1.125em; 
+    float: left;
+    font-family: Lato;
+    margin: 0;
+}
+
+.contests-description a {
+    float: right;
+    padding: 0;
+    color: #87B9ED;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+#vote .contests-description a {color: #FFBC88;}
+
+.contests-description em {margin-right: 0.375em; float: left;}
+
+.contests-description a:hover {text-decoration: underline;}
+
+.item-wrapper {
+    display: flex;
+        display: -moz-box;
+    width: 100%;
+}
+
+.contests .item {
+    position: relative;
+    width: 20%;
+    max-width: 30em;
+    padding-bottom: 24%;
+    margin: 0 0.25% 0 0.25%;
+    overflow: hidden;
+}
+
+#vote .item {padding-bottom: 20%;}
+
+.item-wrapper, .item-wrapper a {
+    color: white;
+    line-height: 1.3em;
+    padding: 0;
+}
+
+.item-wrapper .top {
+    display: flex;
+    float: left;
+    flex-direction: row;
+    position: absolute;
+    margin: 0.875em;
+    height: 10%;
+    width: 90%;
+    text-align: center;
+    font-weight: 800;
+}
+
+.top .column {margin: 0 3%;}
+.top p {font-size: 1.5em; margin-bottom: -0.1em; opacity: 0.2;}
+.top em {font-weight: 400; font-size: 0.625em;}
+
+.top > :first-child {margin-left: 0;}
+
+.item-wrapper a.join {
+    display: flex;
+    position: absolute;
+    height: 70%;
+    margin-top: 0%;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+#vote a.join .button {margin-top: 1em;}
+
+.join .blue, .join .red, .join .button {padding: 0.625em 1.250em; transition: all ease 0.2s; opacity: 0;}
+
+.item-wrapper .name {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 40%;
+    bottom: 0;
+    opacity: 0.75;
+}
+
+.name .contest-name {
+    width: 100%;
+    padding: 0 0.750em;
+    align-self: flex-start;
+    text-align: center;
+    font-size: 1.125em;
+}
+
+.item-wrapper .bottom {
+    position: absolute;
+    width: 90%;
+    height: 2em;
+    bottom: 0;
+    margin-left: 0.875em;
+    margin-bottom: 0.875em;
+    line-height: 2em;
+}
+
+.bottom a {font-size: 0.875; opacity: 0.5;}
+.bottom i {font-size: 0.9375em; vertical-align: bottom;}
+
+.bottom .image {
+    position: relative;
+    display: inline;
+    margin-right: 0.5em;
+    height: 1.75em;
+    width: 1.75em;
+}
+
+.background {position: absolute; height:100%; width: 100%; transition: all ease 0.2s;}
+
+.item-wrapper > :first-child {margin-left: 0 !important;}
+.item-wrapper > :last-child {margin-right: 0 !important;}
+
+.item-wrapper *:hover .background {transform: scale(1.025);}
+.item-wrapper *:hover .bottom a {color: #FFBC88; opacity: 1;}
+.item-wrapper *:hover .join:hover .button {opacity: 1;}
+.item-wrapper *:hover .name {opacity: 1;}
+.item-wrapper *:hover .top p {opacity: 1;}
+
+* {float:none;}

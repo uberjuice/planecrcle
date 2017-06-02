@@ -1,0 +1,220 @@
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 1em;
+    font-family: lato, Open Sans, sans-serif;
+}
+
+p, input {font-size: 1.125em; font-family: Open Sans, sans-serif;}
+
+input {font-family: lato, open sans, sans-serif;}
+
+h2 {
+    margin-top: 0.375em;
+    font-size: 1.250em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.125em;
+    text-transform: capitalize;
+    margin-bottom: 2em;
+    font-weight: 600;
+}
+
+h4 {font-size: 1.125em; margin-top: 1em;}
+
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+li {display: inline-block;}
+
+a {
+    font-family: lato, helvetica, sans-serif;
+    color: black;
+    padding: 1em 1em 1em 1em;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.wrapper {width: 100%;}
+
+div.menu {
+    top: 1.25em;
+    position: absolute;
+    width: 100%;
+}
+
+ul.menu {
+    display: inline;  
+    overflow: hidden;
+    list-style: none;
+    line-height: 2em;
+    padding-top: 1em;
+    margin-left: 1em;
+    top: 0;
+}
+
+.menu a {
+    color: white;
+    text-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+}
+
+/* RIGHT MENU */
+
+.menu-right {
+    display: inline;
+    float: right;
+    margin-right: 1em;
+    margin-top: -0.0625em;
+}
+
+#image, a.notification, input {
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+    vertical-align: top;
+    display: inline-block;
+    transition: all ease 0.4s;
+}
+
+#image {
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* avatar hover */
+
+#image:hover {height: 3.25em; width: 3.25em;}
+
+a.notification {
+    border-radius: 4em;
+    padding: 0.750em 0.925em;
+    margin: 0em 1.5em;
+    background-color:#FF9544;
+    font-size: 1em;
+}
+
+/* notification hover */
+
+a.notification:hover {margin: 0em 1.750em;}
+
+input[type=text] {
+    border-width: 0.125em;
+    border-style: solid;
+    border-color: white;
+    border-radius: 4em;
+    padding: 0.375em 1em 0.4375em 1.25em;
+    margin: 0 1em;
+    font-size: 1em;
+    width: 0em;
+}
+
+/* When the input field gets hovered&focused */
+input[type=text]:not(:hover) {transition-delay: 0.3s}
+input[type=text]:hover {width: 10em;}
+input[type=text]:focus {width: 12em;}
+
+/* RIGHT MENU */
+
+/* LEFT MENU */
+
+.icon-new, .icon-challenges-2, .icon-help, .icon-logo {
+    font-size: 2.5em;
+    padding: 0.625em 0.375em 0.250em 0.375em;
+    transition: all ease 0.4s;
+}
+
+.icon-logo:hover {box-shadow: inset 0 6.25em 0 0 #767676;}
+.icon-challenges-2:hover {box-shadow: inset 0 6.25em 0 0 #FFCF88;}
+.icon-new:hover {box-shadow: inset 0 6.25em 0 0 #FFBC88;}
+.icon-help:hover {box-shadow: inset 0 6.25em 0 0 #87B9ED;}
+
+.shadow {background: linear-gradient( rgba(0,0 ,0,0.1) 5%, rgba(0,0,0,0.1) 60%);}
+
+.icon-logo:not(:hover),.icon-challenges-2:not(:hover),.icon-new:not(:hover),.icon-help:not(:hover) {transition-delay: 0.15s;}
+
+/* Dropdowns left menu*/
+
+.dropdown-left-menu {
+    transition: all 0.4s ease 0.2s;
+    visibility: hidden;
+    display: block;
+    margin-top: 0.375em;
+    position: absolute;
+    line-height: 4em;
+    text-align: center;
+    height: 4em;
+    z-index: 1;
+    width: 17.5em;
+}
+
+.dropdown-left-menu p {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+.dropdown-left-menu:not(:hover) {visibility:hidden; transition: all 0.1s ease 0s;}
+
+#dropdown-logo:hover .dropdown-left-menu {
+    visibility: visible;
+    box-shadow: inset 0 5em 0 0 #767676;
+}
+
+#dropdown-challenges:hover .dropdown-left-menu {
+    visibility: visible;
+    box-shadow: inset 0 5em 0 0 #FFCF88;
+}
+
+#dropdown-new-challenge:hover .dropdown-left-menu {
+    visibility: visible;
+    box-shadow: inset 0 5em 0 0 #FFBC88;
+}
+
+#dropdown-help:hover .dropdown-left-menu {
+    visibility: visible;
+    box-shadow: inset 0 5em 0 0 #87B9ED;
+}
+
+#dropdown-challenges .dropdown-left-menu {left: 1em;}
+#dropdown-new-challenge .dropdown-left-menu {left: 1em;}
+#dropdown-help .dropdown-left-menu {left: 1em;}
+
+
+/* LEFT MENU */
+
+.tag {
+    display: inline-block;
+    border-radius: 2em;
+    padding: 0.125em 0.875em;
+    border: 0.0675em solid #7DEBE3;
+    margin: 0.125em;
+    text-transform: capitalize;
+    transition: all ease 0.4s;
+}
+
+.tag:hover {
+    background-color: #7DEBE3;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 2em;
+    padding: 0.125m 0.875em;
+    background-color: #87B9ED;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+    text-transform: capitalize;
+    color: white;
+}

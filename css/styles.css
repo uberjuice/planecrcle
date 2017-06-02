@@ -1,0 +1,136 @@
+body {
+    margin: 0 auto;
+    width: 95%;
+    position: ;
+}
+
+ul.menu {
+    position: fixed;
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: none;
+    font-family: lato;
+    font-size: 1.3em;
+    text-align: left;
+    display: block;
+} /* top menu style */
+
+.wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+ul.nav_profile {
+    position: fixed;
+    top: 305px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+/*    background-color: #202020; */
+    font-family: lato;
+    font-size: 16px;
+    text-align: center;
+} /* bottom navigation */
+
+li a  {
+    color: black;
+    text-align: center;
+    padding: 1.2em 1em;
+    text-decoration: none;
+}
+
+li {display: inline;}
+
+a {display: inline-block;}
+
+a#logo {
+    margin-left: 2em;
+}
+
+.active a, .active a:hover {
+    color: aqua;
+/*    background-color: #010101; */
+}  
+
+li a:hover {
+/*    background-color: #151515;  */
+    color: aqua;
+}
+
+p {
+    font-size: 1em;
+    font-family: lato;
+}
+
+h1 {font-size: 2em; font-family: lato;
+}
+
+h2 {font-size: 1.3em; font-family: lato;}
+
+/* avatar and profile menu */
+
+li.menu-right {
+    float: right;
+    margin-right: 2em;
+}
+
+a.menu-right span {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    left: 2.2em;
+    font-size: 0.8em;
+}
+
+#image {
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 0.27em;
+    margin: 2px 1px 1px 1px;
+    z-index: -1;
+} /* avatar style */
+
+/* notifications button style and hover */
+.notification {
+    font-size: 0.9em;
+    position: relative;
+    padding: 0px;
+    border-radius: 60%;
+    margin: 0px 0px;
+    width: 1.5em;
+    height: 1.5em;
+    top: 1.1em;
+    left: 1.3em;
+    border: 0.14em solid red;
+    background-color: white;
+}
+
+
+div.profile {
+    position: static;
+    background-color: #efefef;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+}  
+
+.profile #info_image {
+    border-radius: 50%;
+    padding: 1px;
+    display: inline-block;
+}
